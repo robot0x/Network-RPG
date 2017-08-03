@@ -25,11 +25,10 @@ GameObject:
   - component: {fileID: 54096912881915174}
   - component: {fileID: 114288899564569122}
   - component: {fileID: 114070798185828298}
-  - component: {fileID: 114973574542175538}
   - component: {fileID: 114966973823189080}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +189,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 02a20fb8f9d4b234897222d82a3c7a23, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -321,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
+  m_SendInterval: 0
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
@@ -485,24 +484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9602f497f7565b54cb69f9bce29773cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nowHp: 100
   hpSlider: {fileID: 114328819282129070}
   destroyOnDeath: 1
---- !u!114 &114973574542175538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1010037941512606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2244970df55ebd43b17189699de7833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 5
-  jumpSpeed: 5
-  bulletPre: {fileID: 1102318671518586, guid: 156c2ade40919a041ba0eb59c9219167, type: 2}
-  bulletTrans: {fileID: 4722654616797398}
 --- !u!136 &136173422256949410
 CapsuleCollider:
   m_ObjectHideFlags: 1

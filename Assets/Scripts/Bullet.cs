@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy")
         {
             other.collider.SendMessage("TakeDamage", 10);
             Destroy(this.gameObject);
